@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanner-line"></div>
+  <div class="grid-bg"></div>
+  <div class="wrapper">
+    <div class="header">
+      <h2>VOID PROTOCOL</h2>
+    </div>
+    <div class="status-panel">
+      <div style="display: flex; flex-direction: column;">
+        <span id="statusLabel">PROTOCOL: OFFLINE</span>
+        <span id="threatCount">000 THREATS</span>
+      </div>
+      <div id="statusPulse" class="pulse"></div>
+    </div>
+    <button id="clearCache">Purge Trace Data</button>
+    <button id="toggleProtection">Activate</button>
+    <div class="footer">
+      SYSTEM BY <a href="https://github.com/ismailoksuz" target="_blank">ISMAIL OKSUZ</a>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
