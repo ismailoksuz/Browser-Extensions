@@ -1,0 +1,54 @@
+body {
+  width: 250px;
+  margin: 0;
+  padding: 15px;
+  font-family: -apple-system, sans-serif;
+  background: #f4f4f7;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border: 1px solid #e1e4e8;
+}
+
+h2 { font-size: 16px; margin: 0 0 5px 0; color: #1a1a1a; }
+p { font-size: 12px; color: #586069; margin: 0 0 15px 0; line-height: 1.4; }
+
+.stats-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  border: 1px dashed #d1d5da;
+}
+
+.stats-label { font-size: 10px; font-weight: 800; color: #6a737d; }
+.stats-value { font-size: 14px; font-weight: bold; color: #0066cc; }
+
+#toggleBtn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.active-mode { background: #0066cc; color: white; }
+.passive-mode { background: #eaecf0; color: #24292f; }
+
+.credit {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 10px;
+  color: #6a737d;
+}
+
+.credit a { color: #0066cc; text-decoration: none; font-weight: bold; }
