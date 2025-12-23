@@ -59,9 +59,12 @@ const tableToCSV = (table) => {
 };
 
 const downloadCSV = (csv, filename) => {
-  const csvFile = new Blob([csv], { type: 'text/csv' });
+  const date = new Date().toISOString().slice(0, 10);
+  const dynamicName = `${filename.split('.')[0]}-${date}.csv`;
+  
+  const csvFile = new Blob(["\uFEFF" + csv], { type: 'text/csv;charset=utf-8;' });
   const downloadLink = document.createElement('a');
-  downloadLink.download = filename;
+  downloadLink.download = dynamicName;
   downloadLink.href = window.URL.createObjectURL(csvFile);
   downloadLink.style.display = 'none';
   document.body.appendChild(downloadLink);
