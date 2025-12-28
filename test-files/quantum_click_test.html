@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quantum Click: Target Practice</title>
+    <style>
+        body { background: #050505; color: #00f2ff; font-family: 'Courier New', monospace; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        .target-box { width: 300px; height: 300px; border: 2px solid #1a1c25; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: 0.3s; cursor: pointer; }
+        .target-box:hover { border-color: #00f2ff; box-shadow: 0 0 20px rgba(0, 242, 255, 0.1); }
+        #counter { font-size: 64px; font-weight: bold; text-shadow: 0 0 10px #00f2ff; }
+        .label { font-size: 12px; letter-spacing: 4px; color: #555; margin-bottom: 20px; }
+        button { margin-top: 30px; background: transparent; border: 1px solid #ff0055; color: #ff0055; padding: 10px 20px; cursor: pointer; font-family: inherit; }
+    </style>
+</head>
+<body>
+    <div class="label">NEURAL INTERFACE TEST</div>
+    <div class="target-box" onclick="count()">
+        <div id="counter">0</div>
+        <div style="font-size: 10px; margin-top: 10px;">CLICKS DETECTED</div>
+    </div>
+    <button onclick="reset()">RESET DATA</button>
+
+    <script>
+        let clicks = 0;
+        function count() {
+            clicks++;
+            document.getElementById('counter').innerText = clicks;
+        }
+        function reset() {
+            clicks = 0;
+            document.getElementById('counter').innerText = clicks;
+        }
+    </script>
+</body>
+</html>

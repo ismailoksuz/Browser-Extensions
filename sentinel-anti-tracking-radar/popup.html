@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sentinel-frame">
+    <header>
+      <div class="scanner-title">SENTINEL<span>RADAR</span></div>
+      <div class="scan-line"></div>
+    </header>
+
+    <div class="radar-container">
+      <div class="radar-circle">
+        <div class="radar-sweep"></div>
+        <div id="tracker-dots"></div>
+      </div>
+    </div>
+
+    <div class="stats-panel">
+      <div class="stat-item">
+        <label>THREATS DETECTED</label>
+        <span id="threat-count">0</span>
+      </div>
+      <div class="stat-item">
+        <label>SYSTEM STATUS</label>
+        <span id="sys-status">SECURE</span>
+      </div>
+    </div>
+
+    <div id="tracker-list" class="log-area"></div>
+
+    <footer>
+      <a href="https://github.com/ismailoksuz" target="_blank" class="dev-link">ISMAILOKSUZ // ACCESS GRANTED</a>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
