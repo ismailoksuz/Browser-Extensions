@@ -12,6 +12,7 @@ Each extension is located in its own folder containing its specific manifest, as
 | :--- | :--- | :--- |
 | Void Protocol | A futuristic privacy shield that blocks trackers and advertisements with a session-based threat counter. | HTML, CSS, JavaScript |
 | Wiki Table Downloader | A professional utility tool to detect and export Wikipedia tables into clean CSV files instantly. | HTML, CSS, JavaScript |
+| Quantum Click | A precision auto-clicker protocol featuring an independent targeting cursor and hotkey-driven execution. | HTML, CSS, JavaScript |
 
 ## Installation Guide
 

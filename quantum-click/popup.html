@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="void-container">
+    <header>
+      <div class="logo">QUANTUM<span>CLICK</span></div>
+      <div class="status-bar">STATUS: <span id="status">IDLE</span></div>
+    </header>
+    
+    <div class="mode-selector">
+      <input type="radio" id="chrono" name="mode" value="chrono" checked>
+      <label for="chrono">CHRONO-BURST</label>
+      <input type="radio" id="pulse" name="mode" value="pulse">
+      <label for="pulse">RAPID-PULSE</label>
+    </div>
+
+    <main>
+        <div id="panel-chrono" class="panel">
+            <div class="field">
+              <label>TEMPORAL LIMIT (HH:MM:SS)</label>
+              <input type="text" id="duration" value="00:00:00" placeholder="00:00:00">
+            </div>
+            <div class="field">
+              <label>TARGET CLICKS</label>
+              <input type="number" id="total-clicks" value="0">
+            </div>
+            <div class="field">
+              <label>END-CYCLE CHIMES</label>
+              <input type="number" id="alert-count" value="0">
+            </div>
+          </div>
+          
+          <div id="panel-pulse" class="panel hidden">
+            <div class="field">
+              <label>PULSE FREQUENCY (CPS)</label>
+              <input type="range" id="cps-range" min="1" max="100" value="1">
+              <div class="range-display"><span id="cps-value">0</span> Hz</div>
+            </div>
+          </div>
+    </main>
+
+    <div class="action-grid" style="grid-template-columns: 1fr;">
+      <button id="place-cursor" class="btn-void glow-cyan" style="margin-bottom: 10px;">PLACE CURSOR</button>
+    </div>
+    <div class="action-grid">
+      <button id="start" class="btn-void glow-cyan">INITIALIZE</button>
+      <button id="stop" class="btn-void glow-red">ABORT</button>
+    </div>
+
+    <footer>
+      <div class="credit">ENCRYPTED BY <a href="https://www.github.com/ismailoksuz" target="_blank">ISMAILOKSUZ</a></div>
+      <div class="version">V1.0.0-PROT</div>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
