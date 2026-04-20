@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Erişilebilirlik Asistanım",
+  "version": "1.0",
+  "description": "Görme engelliler için basit sesli asistan.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
